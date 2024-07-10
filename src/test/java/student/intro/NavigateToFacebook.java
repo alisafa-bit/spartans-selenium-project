@@ -11,7 +11,10 @@ public class NavigateToFacebook {
         // To open browser
         enteringToFacebook.get("https://www.facebook.com");
         //To close browser entirely.
-        enteringToFacebook.quit();
+        // enteringToFacebook.quit();
+
+        String title = enteringToFacebook.getTitle();
+        System.out.println(title);
 
     }
 }
