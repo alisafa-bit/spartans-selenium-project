@@ -10,6 +10,7 @@ public class CrossCrossing {
         System.out.println("https://www.google.com/");
         String title = driver.getTitle();
         System.out.println(title);
+        // driver.quit();
 
 
     }
