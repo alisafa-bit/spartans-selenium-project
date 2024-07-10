@@ -8,6 +8,6 @@ public class Activity_student {
         String title = insuranceTitle.getTitle();
         insuranceTitle.manage().window().maximize();
         System.out.println("https://dev.insurance.tekschool-students.com/");
-        insuranceTitle.quit();
+        //insuranceTitle.quit();
     }
 }
