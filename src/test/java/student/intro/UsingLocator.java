@@ -15,13 +15,11 @@ public class UsingLocator {
         driver.get("https://retail.tekschool-students.com/products");
 
         By searchInputLocator = By.id("searchInput");
-        WebElement searchInputElement = new driver.findElement(searchBtnLocator);
-
-        By searchInputLocator = driver.findElement(searchInputLocator);
-        Alert searchBtnLocator;
-        searchBtnLocator.sendKeys("TV");
+        WebElement searchInputElement =driver.findElement(searchInputLocator);
+        searchInputElement.sendKeys("TV");
         By searchBtnLocator = By.id("searchBtn");
-        WebElement searchBtnElement = new driver.findElements(searchBtnLocator);
+        WebElement searchBtnElement = driver.findElement(searchBtnLocator);
+        searchBtnElement.click();
 
     }
 }
