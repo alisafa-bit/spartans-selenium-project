@@ -1,4 +1,4 @@
-package student.intro;
+package student.intro.CrossBrowsing;
 
 import org.openqa.selenium.WebDriver;
 import java.util.Scanner;
