@@ -8,13 +8,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CrossBrowsingHandling {
     public static void main(String[] args) {
+        WebDriver driver;
 
         var scnObj = new Scanner(System.in);
         System.out.print("Enter your browser please.");
         String browserType = scnObj.next();
-        WebDriver driver;
 
-        if(browserType.equalsIgnoreCase("Chrome")){
+
+        if(browserType.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver();
         } else if (browserType.equalsIgnoreCase("firefox")) {//equalsIgnoreCase
            driver = new FirefoxDriver();
@@ -23,6 +24,6 @@ public class CrossBrowsingHandling {
         } else {
             throw new RuntimeException("wrong browser.");
         }
-        driver.get("https//google.com");
+
     }
 }
