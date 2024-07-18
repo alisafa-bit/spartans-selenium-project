@@ -1,4 +1,4 @@
-package student.intro.Naming;
+package Naming;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

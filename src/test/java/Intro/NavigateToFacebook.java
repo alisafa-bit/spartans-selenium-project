@@ -1,4 +1,4 @@
-package student.intro.Intro;
+package Intro;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 

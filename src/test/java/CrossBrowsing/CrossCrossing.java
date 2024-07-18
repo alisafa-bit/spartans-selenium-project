@@ -1,4 +1,4 @@
-package student.intro.CrossBrowsing;
+package CrossBrowsing;
 
 import org.openqa.selenium.edge.EdgeDriver;
 
