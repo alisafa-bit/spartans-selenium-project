@@ -1,4 +1,4 @@
-package Naming;
+package Locator.Naming;
 import java.util.List;
 
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package Naming;
+package Locator.Naming;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
