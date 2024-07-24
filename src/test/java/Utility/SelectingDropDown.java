@@ -18,8 +18,17 @@ public class SelectingDropDown {
         Thread.sleep(3000);
 
         WebElement element = driver.findElement(By.id("programmingLanguageSelect"));
-
         Select programmingLanguageSelect = new Select(element);
-        programmingLanguageSelect.selectByIndex(2);
+        //programmingLanguageSelect.selectByIndex(2);
+        //programmingLanguageSelect.selectByValue("cPlusPlus");
+        programmingLanguageSelect.selectByVisibleText("C#");
+/*
+        WebElement element1 = driver.findElement(By.id("Italian"));
+        Select ItalianSelect = new Select(element1);
+        ItalianSelect.selectByValue("Italian");
+        */
+        driver.findElement(By.xpath("//p[text()='Depart']/following-sibling::input"))
+                .sendKeys("05/6/1987");
+
     }
 }

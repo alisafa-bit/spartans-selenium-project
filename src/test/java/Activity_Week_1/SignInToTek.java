@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SigninToTek {
+public class SignInToTek {
     /*
     In Retail App, click on sign in then click on Create new Account
     then fill up the form and sign up. Expectation is to Create Account.
@@ -23,6 +23,7 @@ public class SigninToTek {
         driver.findElement(By.id("passwordInput")).sendKeys("Password_87");
         driver.findElement(By.id("confirmPasswordInput")).sendKeys("Password_87");
         driver.findElement(By.id("signupBtn")).click();
+        driver.findElement(By.id("profileImage"));
 
 
 

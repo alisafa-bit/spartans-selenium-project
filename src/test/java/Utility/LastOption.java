@@ -8,9 +8,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.awt.*;
 import java.time.Duration;
-import java.util.List;
 
-public class DropDownSelect {
+public class LastOption {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://retail.tekschool-students.com/selenium/dropdown");
@@ -18,12 +17,11 @@ public class DropDownSelect {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Thread.sleep(2000);
 
-        WebElement element = driver.findElement(By.id("languageSelect"));
-        Select programmingLanguage = new Select(element);
-       // programmingLanguage.selectByVisibleText("Italian");
-        //programmingLanguage.selectByIndex(4);
-        List<WebElement> option = programmingLanguage.getOptions();
-        int size = option.size();
-        programmingLanguage.selectByIndex(size - 1);
+        WebElement countryName = driver.findElement(By.name("country"));
+        Select select = new Select(countryName);
+        select.selectByVisibleText("Italian");
+        //List<WebElement> options = select.getOptions();
+       // int size = options.size();
+
     }
 }
